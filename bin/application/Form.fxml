@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormController">
+   <top>
+      <Label fx:id="label_text" text="じゃんけんゲーム" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="image_player" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image_enemy" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <Label text="あなた" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Label text="あいて" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button_OK" mnemonicParsing="false" onAction="#onOKClicked" text="もう一回" />
+            <Button fx:id="button_Rock" mnemonicParsing="false" onAction="#onRockClicked" text="グー" />
+            <Button fx:id="button_Scissors" mnemonicParsing="false" onAction="#onScissorsClicked" text="チョキ" />
+            <Button fx:id="button_Paper" mnemonicParsing="false" onAction="#onPaperClicked" text="パー" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
